@@ -1,0 +1,13 @@
+.create-container {
+    padding-top: 135px;
+}
+
+.create-button {
+    background-color: #749c75 !important;
+    border: #749c75 !important;
+}
+
+.delete-button {
+    background-color: #AB2346 !important;
+    border: #AB2346 !important;
+}

@@ -1,0 +1,35 @@
+.main {
+    height: auto;
+    overflow-y: scroll;
+    max-height: 65vh;
+}
+
+.event-pending {
+    display: flex !important;
+    background-color: rgba(190, 124, 77, 0.8) !important;
+    border: #ab7045 !important;
+}
+
+.event-done {
+    display: flex !important;
+    background-color: rgba(158, 158, 158, 0.8) !important;
+    border: #9E9E9E !important;
+}
+
+.buttons {
+    padding-top: 135px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.new-button {
+    background-color: #749c75 !important;
+    border: #749c75 !important;
+}
+
+.filter-button {
+    background-color: #749c75 !important;
+    border: #749c75 !important;
+}
+
