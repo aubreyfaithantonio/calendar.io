@@ -16,6 +16,12 @@
     border: #9E9E9E !important;
 }
 
+.event-ongoing {
+    display: flex !important;
+    background-color: rgba(87, 255, 9, 0.8) !important;
+    border: #9E9E9E !important;
+}
+
 .event-pending:hover {
     display: flex !important;
     background-color: rgba(155, 101, 63, 0.8) !important;
@@ -40,9 +46,15 @@
 
 .buttons {
     padding-top: 135px;
-    padding-bottom: 25px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.filter-container {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 

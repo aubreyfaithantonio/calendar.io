@@ -1,5 +1,25 @@
 {
   "event": [
-    
+    {
+      "name": "Today's video",
+      "description": "asdasd",
+      "date": "2022-12-22",
+      "status": "done",
+      "id": 1
+    },
+    {
+      "name": "test",
+      "description": "test",
+      "date": "2022-12-30",
+      "status": "pending",
+      "id": 2
+    },
+    {
+      "name": "asdasd",
+      "description": "assdasdas",
+      "date": "2022-12-22",
+      "status": "ongoing",
+      "id": 3
+    }
   ]
 }

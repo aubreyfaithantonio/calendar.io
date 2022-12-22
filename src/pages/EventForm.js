@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Container, Form, Button} from "react-bootstrap";
 import "../css/Form.css"
 import { manageEvent, getEvent, deleteEvent } from "../fetch/Fetch";
 import Swal from "sweetalert2";
 import { useNavigate, useParams } from "react-router-dom";
+import DateContext from "../DateContext";
 
 export default function Create() {
 
@@ -14,6 +15,7 @@ export default function Create() {
     const [description, setDescription] = useState("")
     const [date, setDate] = useState("")
     const [status, setStatus] = useState("pending")
+    const {currentDate} = useContext(DateContext)
 
     function manageForm(event) {
         event.preventDefault()
@@ -22,7 +24,7 @@ export default function Create() {
             name: name,
             description: description,
             date: date,
-            status: status,
+            status: (date === currentDate && event_id === 'create') ? 'ongoing' : status,
             action: event_id === "create" ? "create": "update",
             id: event_id === "create" ? "": event_id
         }
@@ -80,7 +82,7 @@ export default function Create() {
                 <Form onSubmit={event => manageForm(event)}>
                     <Form.Group className="mb-3" controlId="formEventName">
                         <Form.Label>Event</Form.Label>
-                        <Form.Control type="event" placeholder="Enter event name" value={name}
+                        <Form.Control autoComplete="off" type="text" placeholder="Enter event name" value={name}
                         onChange={event => setName(event.target.value)} />
                     </Form.Group>
 
@@ -102,6 +104,7 @@ export default function Create() {
                         <Form.Select name="status" value={status}
                         onChange={event => setStatus(event.target.value)}>
                             <option value="pending">Pending</option>
+                            <option value="ongoing">On-going</option>
                             <option value="done">Done</option>
                         </Form.Select>
                     </Form.Group>}
