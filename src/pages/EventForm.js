@@ -76,7 +76,7 @@ export default function Create() {
 
     return(
         <>
-            <Container className="create-container">
+            <Container className="create-container px-5">
                 <Form onSubmit={event => manageForm(event)}>
                     <Form.Group className="mb-3" controlId="formEventName">
                         <Form.Label>Event</Form.Label>
@@ -106,15 +106,16 @@ export default function Create() {
                         </Form.Select>
                     </Form.Group>}
 
-                    <Button className="create-button" type="submit" size="lg">
-                    {event_id === "create" ? "Create new event": "Update Event"}
-                    </Button>
+                    <Container className={event_id === "create" ? "button-container2": "button-container"}>
+                        <Button className="create-button" type="submit" size="lg">
+                        {event_id === "create" ? "Create new event": "Update"}
+                        </Button>
 
-                    {event_id === "create" ? "" : 
-                    <Button className="delete-button" type="button" size="lg" onClick={() => removeEvent(event_id)}>
-                        Delete Event
-                    </Button>}
-                    
+                        {event_id === "create" ? "" : 
+                        <Button className="delete-button" type="button" size="lg" onClick={() => removeEvent(event_id)}>
+                            Delete
+                        </Button>}
+                    </Container>
                 </Form>
             </Container>
         </>

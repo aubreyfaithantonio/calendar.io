@@ -16,20 +16,60 @@
     border: #9E9E9E !important;
 }
 
+.event-pending:hover {
+    display: flex !important;
+    background-color: rgba(155, 101, 63, 0.8) !important;
+    border: rgba(155, 101, 63, 1.0) !important;
+}
+
+.event-done:hover {
+    display: flex !important;
+    background-color: rgba(124, 124, 124, 0.8) !important;
+    border: rgba(124, 124, 124, 1.0) !important;
+}
+
+.event-pending:focus {
+    border-color: #ab7045 !important;
+    box-shadow: 0 0 0 0.25rem #ab7045 !important;
+}
+
+.event-done:focus {
+    border-color: #ab7045 !important;
+    box-shadow: 0 0 0 0.25rem #ab7045 !important;
+}
+
 .buttons {
     padding-top: 135px;
     padding-bottom: 25px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .new-button {
     background-color: #749c75 !important;
     border: #749c75 !important;
+    padding: 14px 40px !important;
 }
 
-.filter-button {
-    background-color: #749c75 !important;
-    border: #749c75 !important;
+.new-button:hover {
+    background-color: #5d7e5e !important
 }
 
+.new-button:focus {
+    border-color: #ab7045 !important;
+    box-shadow: 0 0 0 0.25rem #ab7045 !important;
+}
+
+.form-select:hover {
+    box-shadow: 0 0 0 0.25rem #5d7e5e !important;
+}
+
+.form-select:focus {
+    border-color: #ab7045 !important;
+    box-shadow: 0 0 0 0.25rem #ab7045 !important;
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece  {
+    background-color: transparent !important;
+}

@@ -1,7 +1,7 @@
 const url = `${process.env.REACT_APP_API_URL}`
 
 const allEvents = (sortFilter) => {
-    return fetch(url + 'event' + sortFilter, {
+    return fetch(url + 'event?_sort=date&_order=asc' + sortFilter, {
       method: 'GET'
     })
       .then(response => response.json())

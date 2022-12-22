@@ -9,13 +9,13 @@ function App() {
     <>
       <Router>
           <AppNavbar/>
-					<div className="main-container">
+					<div className="main-container" style={{height:'auto',width:'100%'}}>
 						<Routes>
 							<Route path="/" element={<Home/>}/>
               <Route path="/form/:event_id" element={<EventForm/>}/>
 						</Routes>
 					</div>
-				</Router>
+			</Router>
     </>
   );
 }

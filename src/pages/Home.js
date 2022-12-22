@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Container, Row, Col, Dropdown, Form } from "react-bootstrap";
+import { Button, Container, Row, Col, Image, Form, Card } from "react-bootstrap";
 import {Link} from "react-router-dom";
 import "../css/Home.css"
 import { allEvents } from "../fetch/Fetch";
@@ -10,7 +10,7 @@ export default function Home(){
     const [status, setStatus] = useState("all")
 
     useEffect(() => {
-        let sortFilter = status === 'all' ? '' : '?status=' + status
+        let sortFilter = status === 'all' ? '' : '&status=' + status
 		allEvents(sortFilter).then(result => {
 			setEvents(result)
 		})
@@ -21,14 +21,14 @@ export default function Home(){
             <Container className="fixed">
                 <Row className="buttons">
                     <Col className="new col-6">
-                        <Button className="new-button px-5" size="lg" as={Link} to="/form/create">
-                            Create
+                        <Button className="new-button my-3" size="lg" as={Link} to="/form/create">
+                            Create event
                         </Button>
                     </Col>
 
                     <Col className="filter col-6">
                         <Form.Group className="mb-3" controlId="formEventStatus">
-                            <Form.Label>Status</Form.Label>
+                            <Form.Label><strong>Status</strong></Form.Label>
                             <Form.Select name="status" value={status}
                             onChange={event => setStatus(event.target.value)}>
                                 <option value="all">All</option>
@@ -51,13 +51,17 @@ export default function Home(){
                 ))}
                 {(events.length === 0) ?
                     <Row className="my-2 mx-3">
-                        You have no events yet.
+                        <Card>
+                            <Card.Body>
+                            <Card.Text className="text-center">
+                                 You have no events yet.
+                            </Card.Text> 
+                            </Card.Body>
+                        </Card>
                     </Row>
                     :
                     ''
                 }
-
-                
             </Container>
         </>
     )

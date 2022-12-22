@@ -10,4 +10,48 @@
 .delete-button {
     background-color: #AB2346 !important;
     border: #AB2346 !important;
+    margin-left: 10px !important;
+}
+
+.create-button:hover {
+    background-color: #5d7e5e !important;
+    border: #5d7e5e !important;
+}
+
+.delete-button:hover {
+    background-color: #881c37 !important;
+    border: #881c37 !important;
+}
+
+.create-button:focus {
+    border-color: #ab7045 !important;
+    box-shadow: 0 0 0 0.25rem #ab7045 !important;
+}
+
+.delete-button:focus {
+    border-color: #ab7045 !important;
+    box-shadow: 0 0 0 0.25rem #ab7045 !important;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px !important;
+}
+
+.button-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px !important;
+}
+
+.form-control:focus {
+    border-color: #ab7045 !important;
+    box-shadow: 0 0 0 0.25rem #ab7045 !important;
+}
+
+button {
+    padding: 14px 40px !important;
 }
