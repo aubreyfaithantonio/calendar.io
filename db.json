@@ -1,74 +1,25 @@
 {
   "event": [
     {
-      "name": "dasgsdg",
-      "description": "asdgdgafaf",
-      "date": "2022-12-01",
-      "status": "done",
+      "name": "Brother's Wedding",
+      "description": "Don't forget to buy a wedding gift",
+      "date": "2023-01-12",
+      "status": "pending",
       "id": 1
     },
     {
-      "name": "fgdfg",
-      "description": "dfgdfg",
-      "date": "2022-12-24",
-      "status": "pending",
+      "name": "Practical Exam",
+      "description": "Submit before 3PM",
+      "date": "2022-12-22",
+      "status": "ongoing",
       "id": 2
     },
     {
-      "name": "gfgfsg",
-      "description": "sdfgdfgdfg",
-      "date": "2022-12-08",
-      "status": "pending",
-      "id": 3
-    },
-    {
-      "name": "fgdfg",
-      "description": "dfgdfgdfg",
-      "date": "2022-12-24",
+      "name": "Mom's Birthday",
+      "description": "Buy Pizza and Cake",
+      "date": "2022-04-18",
       "status": "done",
-      "id": 4
-    },
-    {
-      "name": "seftgwertqwe3r",
-      "description": "3r3r",
-      "date": "2022-12-22",
-      "status": "done",
-      "id": 7
-    },
-    {
-      "name": "gfgfsg",
-      "description": "sdfgdfgdfg",
-      "date": "2022-12-08",
-      "status": "pending",
       "id": 3
-    },
-    {
-      "name": "fgdfg",
-      "description": "dfgdfgdfg",
-      "date": "2022-12-24",
-      "status": "pending",
-      "id": 4
-    },
-    {
-      "name": "sdfsdf",
-      "description": "we3rasfd",
-      "date": "2022-12-22",
-      "status": "ongoing",
-      "id": 5
-    },
-    {
-      "name": "sdgsdgsdg",
-      "description": "sdgewrdf",
-      "date": "2022-12-22",
-      "status": "ongoing",
-      "id": 6
-    },
-    {
-      "name": "seftgwertqwe3r",
-      "description": "3r3r",
-      "date": "2022-12-22",
-      "status": "ongoing",
-      "id": 7
     }
   ]
 }
