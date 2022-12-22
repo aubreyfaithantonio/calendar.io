@@ -78,6 +78,7 @@ export default function Create() {
 
     return(
         <>
+            <Container className="spacing"></Container>
             <Container className="create-container px-5">
                 <Form onSubmit={event => manageForm(event)}>
                     <Form.Group className="mb-3" controlId="formEventName">

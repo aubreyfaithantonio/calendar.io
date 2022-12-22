@@ -1,7 +1,25 @@
 .main {
+    background-color: rgba(255, 255, 255, 0.747);
+    padding: 25px;
+    height: 30vh;
+}
+
+.main-action {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.main-data {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     height: auto;
+    overflow: hidden;
     overflow-y: scroll;
-    max-height: 65vh;
+    max-height: 50vh !important;
+}
+
+.spacing {
+    height: 125px;
 }
 
 .event-pending {
@@ -18,8 +36,14 @@
 
 .event-ongoing {
     display: flex !important;
-    background-color: rgba(87, 255, 9, 0.8) !important;
-    border: #9E9E9E !important;
+    background-color: rgb(116, 156, 117, 0.8) !important;
+    border: rgb(116, 156, 117) !important;
+}
+
+.event-ongoing:hover {
+    display: flex !important;
+    background-color: rgba(99, 133, 100, 0.8) !important;
+    border: rgb(116, 156, 117) !important;
 }
 
 .event-pending:hover {
@@ -34,25 +58,18 @@
     border: rgba(124, 124, 124, 1.0) !important;
 }
 
-.event-pending:focus {
-    border-color: #ab7045 !important;
-    box-shadow: 0 0 0 0.25rem #ab7045 !important;
-}
-
-.event-done:focus {
+.event-pending:focus, .event-done:focus, .event-ongoing:focus, .new-button:focus, .form-select:focus, .form-select:hover, .form-control:hover {
     border-color: #ab7045 !important;
     box-shadow: 0 0 0 0.25rem #ab7045 !important;
 }
 
 .buttons {
-    padding-top: 135px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .filter-container {
-    padding-bottom: 25px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -61,25 +78,12 @@
 .new-button {
     background-color: #749c75 !important;
     border: #749c75 !important;
-    padding: 14px 40px !important;
+    padding: 14px 50px !important;
+    font-size: 20px !important;
 }
 
 .new-button:hover {
     background-color: #5d7e5e !important
-}
-
-.new-button:focus {
-    border-color: #ab7045 !important;
-    box-shadow: 0 0 0 0.25rem #ab7045 !important;
-}
-
-.form-select:hover {
-    box-shadow: 0 0 0 0.25rem #5d7e5e !important;
-}
-
-.form-select:focus {
-    border-color: #ab7045 !important;
-    box-shadow: 0 0 0 0.25rem #ab7045 !important;
 }
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece  {

@@ -6,7 +6,7 @@ export default function AppNavbar() {
     return(
         <>
             <Navbar className="appBar py-4 fixed-top">
-                <Navbar.Brand as={Link} to="/">
+                <Navbar.Brand className="brand" as={Link} to="/">
                     <img
                     src="../logo.png"
                     width="50"

@@ -32,7 +32,8 @@ export default function Home(){
 
     return(
         <>
-            <Container className="fixed">
+            <Container className="spacing"></Container>
+            <Container className="main main-action fixed">
                 <Row className="buttons">
                     <Col className="new">
                         <Button className="new-button my-3" as={Link} to="/form/create">
@@ -56,7 +57,7 @@ export default function Home(){
 
                     <Col className="filter col-6">
                         <Form.Group className="mb-3" controlId="formEventSearch">
-                            <Form.Label>Search</Form.Label>
+                            <Form.Label><strong>Search</strong></Form.Label>
                             <Form.Control type="text" placeholder="Search event name" value={name}
                             onChange={event => setName(event.target.value)} />
                         </Form.Group>
@@ -64,7 +65,7 @@ export default function Home(){
                 </Row>
             </Container>
 
-            <Container className="main flex">
+            <Container className="main main-data flex">
                 {events.map((event , key) => (
                     <Row className="my-2 mx-3" key={key}>
                         <Button variant="primary" size="lg" className={eventClass(event.status)} as={Link} to={"/form/" + event.id}>

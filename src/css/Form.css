@@ -1,5 +1,7 @@
 .create-container {
-    padding-top: 135px;
+    background-color: rgba(255, 255, 255, 0.747);
+    padding: 25px;
+    border-radius: 25px;
 }
 
 .create-button {
